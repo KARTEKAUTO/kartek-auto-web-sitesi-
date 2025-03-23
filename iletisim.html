@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim - KarTek Auto</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sayfa {
+      min-height: calc(100vh - 100px);
+      padding-bottom: 20px;
+    }
+
+    footer {
+      background-color: #ff0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sayfa">
+    <header>
+      <h1>KarTek Auto</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="iletisim">
+      <h2>İletişim Bilgilerimiz</h2>
+
+      <p><strong>Adres:</strong> Atatürk Mah. Oto Sanayi Cad. No:45, İstanbul</p>
+      <p><strong>Telefon:</strong> 0 (507) 257 52 60</p>
+      <p><strong>Telefon:</strong> 0 (536) 442 61 03</p>
+      <p><strong>E-posta:</strong> kartekauto@hotmail.com</p>
+
+      <h3>Bize Ulaşın</h3>
+      <form>
+        <label for="ad">Adınız Soyadınız:</label><br>
+        <input type="text" id="ad" name="ad"><br><br>
+
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mesaj">Mesajınız:</label><br>
+        <textarea id="mesaj" name="mesaj" rows="5" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 KarTek Auto. Tüm hakları saklıdır.</p>
+    <p>Bu sayfa <strong>Yunus Taha Karaca</strong> tarafından <strong>KarTek Auto</strong> için tasarlanmıştır.</p>
+  </footer>
+
+</body>
+</html>

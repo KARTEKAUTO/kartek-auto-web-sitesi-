@@ -1,0 +1,329 @@
+/*GENEL SAYFA AYARLARI*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER (ÜST KISIM) */
+header {
+    background-color: gray; /* gri arka plan */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+/* NAV YANİ MENÜ */ 
+nav ul {
+    list-style-type: none; /* Nokta kaldırdık*/
+    padding: 0;
+    margin: 0;
+    text-align: right; /*ortaladık*/
+}
+nav ul li{
+display: inline-block; /*yatay hale getirdik*/
+margin: 0 10px; /* aralık bıraktık*/
+}
+nav ul li a{
+    text-decoration: none; /* altı çizili olmayacak*/
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+nav ul li a:hover{
+    background-color: blue; /* üzerine mouse ile gelince mavi renk olucak*/
+}
+/* Ana Sayfa İçeriği */
+#anasayfa {
+    text-align: center;
+    padding: 15px;
+}
+
+#anasayfa h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+#anasayfa p {
+    font-size: 18px;
+    color: #555;
+}
+
+#anasayfa img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/* Hizmetler Sayfası */
+#hizmetler {
+    padding: 50px;
+    text-align: center;
+}
+
+#hizmetler h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#hizmetler ul {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    color: #444;
+}
+/* Açılır Menü DÜZENLİ Versiyon */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Menü öğesinin altına yerleştirir */
+    left: 0;
+    background-color: #ff0000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    list-style: none;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 8px 0;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #0000ff;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Açılır Menü (Dropdown) */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ff0000;
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-menu li {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    padding: 12px 16px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #0000ff;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Açılma Animasyonu */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Ürünler Sayfası */
+#urunler {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #urunler h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .urunler-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .urun-karti {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .urun-karti:hover {
+    transform: scale(1.05);
+  }
+  
+  .urun-karti img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .urun-karti h3 {
+    font-size: 20px;
+    color: #222;
+  }
+  
+  .urun-karti p {
+    color: #666;
+    font-size: 16px;
+  }
+  /* Hakkımızda Sayfası */
+#hakkimizda {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+  }
+  
+  #hakkimizda h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  /* İletişim Sayfası */
+#iletisim {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  #iletisim h2, #iletisim h3 {
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0000ff;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sayfa {
+    min-height: calc(100vh - 100px);
+    padding-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+    /* Mobil uyum için media query */
+@media (max-width: 768px) {
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 0;
+    }
+  
+    .urunler-container,
+    .hizmetler-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .urun-karti,
+    .hizmet-karti {
+      width: 90%;
+    }
+  
+    #iletisim,
+    #hakkimizda,
+    #urunler {
+      padding: 30px 15px;
+      font-size: 16px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  
+    footer {
+      font-size: 13px;
+      padding: 15px;
+    }
+  }
+  
